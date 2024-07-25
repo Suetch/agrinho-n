@@ -1,0 +1,28 @@
+.component {
+  color: var(--bs-gray-800);
+  background-color: var(--bs-gray-100);
+  border: 1px solid var(--bs-gray-200);
+  border-radius:.25rem;
+  /* Add animated background */
+  background-image: linear-gradient(to right, var(--bs-gray-100), var(--bs-gray-200));
+  background-size: 200px 100%;
+  background-position: 0% 0%;
+  animation: animateBackground 3s ease-in-out infinite;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.component-header {
+  color: var(--bs-purple);
+}
+
+.card {
+  margin-bottom: 20px; /* add a 20px margin between the card and the footer */
+}
